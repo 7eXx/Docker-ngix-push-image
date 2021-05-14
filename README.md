@@ -3,7 +3,7 @@ This simple repository aims to test the pull feature to **hub.docker.com**.
 The docker file create a easy web server with nginx and copy the content of nginx folder to the **www** folder.
 
 ## Pre-Check
-To custom username, docker image name and tag edit the information in the file **.env**
+To custom username, docker image name and tag edit the information in the file **.env**.  
 To access docker hub, create a file named **.docker_pass** and place your secret password there.
 
 ## Usage
