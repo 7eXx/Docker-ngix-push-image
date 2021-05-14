@@ -1,16 +1,10 @@
 #!/bin/sh
 
+. ./.env
+
 container_name=nginx-hello-world
-docker_image=nginx-hello-world
 
-if [ $# -eq 0 ] ; then
-    echo 'No tag image provvided'
-    exit 1
-fi
-
-image_tag=$1
-
-full_image_name=$docker_image:$image_tag
+full_image_name=$USERNAME/$DOCKER_IMAGE:$IMAGE_TAG
 
 echo "building image with name: $full_image_name"
 
