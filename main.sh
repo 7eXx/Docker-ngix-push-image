@@ -2,6 +2,8 @@
 
 . ./.env
 
+. ./.env.local
+
 container_name=nginx-hello-world
 
 full_image_name=$USERNAME/$DOCKER_IMAGE:$IMAGE_TAG
